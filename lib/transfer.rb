@@ -28,20 +28,15 @@ def execute_transaction
 #sender.balance -= amount || receiver.balance += amount
  #if valid? 
    #&& status == "pending"
-      # if valid? && amount < self.sender.balance
-      #   self.sender.balance -= amount
-      #   self.receiver.balance += amount
-      #   self.status = "complete"
-      
-  #@balance += amount
-    unless sender.valid?
-    @status == "rejected"
-   "Transaction rejected. Please check your account balance."
- else
-   valid? && amount < self.sender.balance
+      if valid? && amount < self.sender.balance
         self.sender.balance -= amount
         self.receiver.balance += amount
         self.status = "complete"
+      else
+  #@balance += amount
+    !sender.valid?
+    @status == "rejected"
+   "Transaction rejected. Please check your account balance."
 end
 end
 
