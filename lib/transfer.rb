@@ -26,13 +26,14 @@ end
 
 def execute_transaction
   sender.balance -= amount || receiver.balance += amount
+  
    unless sender.valid?
     @status == "rejected"
-    puts "Transaction rejected. Please check your account balance."
+   "Transaction rejected. Please check your account balance."
 end
 end
 
 def reverse_transfer
- 
+ self.balance.last
 end
 end
