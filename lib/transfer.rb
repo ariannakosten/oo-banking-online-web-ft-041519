@@ -34,6 +34,6 @@ end
 end
 
 def reverse_transfer
-self.amount.clear
+
 end
 end
