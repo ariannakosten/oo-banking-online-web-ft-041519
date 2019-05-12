@@ -34,6 +34,6 @@ end
 end
 
 def reverse_transfer
- self.balance.last
+self.amount.last
 end
 end
