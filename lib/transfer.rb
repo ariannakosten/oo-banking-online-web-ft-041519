@@ -30,13 +30,13 @@ def execute_transaction
       if amount < self.sender.balance
         @sender.balance -= amount
         @receiver.balance += amount
-      self.status = "complete"
+        self.status = "complete"
     else
    # !(sender.valid?)
     self.status == "rejected"
    "Transaction rejected. Please check your account balance."
-end
-end
+   end
+  end
 end
 
 def reverse_transfer
