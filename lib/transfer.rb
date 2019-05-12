@@ -5,11 +5,11 @@ class Transfer
   attr_accessor :sender, :receiver, :amount, :status
  
 
-def initialize(sender, receiver, amount = 50)
+def initialize(sender, receiver, amount = 50, status ="pending")
   @sender = sender
   @receiver = receiver
   @amount = amount
-  @status = "pending"
+  @status = status
   
   @@account << self
 end
