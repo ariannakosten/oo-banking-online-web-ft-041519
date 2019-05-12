@@ -25,7 +25,7 @@ def valid?
 end
 
 def execute_transaction
-sender.balance -= amount || receiver.balance += amount
+#sender.balance -= amount || receiver.balance += amount
   @balance += amount
    unless sender.valid?
     @status == "rejected"
