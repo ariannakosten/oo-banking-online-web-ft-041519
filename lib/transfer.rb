@@ -32,7 +32,7 @@ def execute_transaction
         self.sender.balance -= amount
         self.receiver.balance += amount
         self.status = "complete"
-      else
+      
   #@balance += amount
     unless sender.valid?
     @status == "rejected"
