@@ -22,6 +22,7 @@ def valid?
       false
     end
   end
+end
 
 def execute_transaction
 #sender.balance -= amount || receiver.balance += amount
