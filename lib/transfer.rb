@@ -29,7 +29,7 @@ def execute_transaction
  if valid? && status == "pending"
       if amount < self.sender.balance
         self.sender.balance -= amount
-        self.eceiver.balance += amount
+        self.receiver.balance += amount
         self.status = "complete"
       else
    # !(sender.valid?)
