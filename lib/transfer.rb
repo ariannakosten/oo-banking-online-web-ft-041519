@@ -32,7 +32,7 @@ def execute_transaction
         self.status = "complete"
     else
    # !(sender.valid?)
-    self.status == "rejected"
+    @status == "rejected"
    "Transaction rejected. Please check your account balance."
    end
   end
