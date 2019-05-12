@@ -15,7 +15,7 @@ def initialize(sender, receiver, amount = 50)
 end
 
 def valid?
-  if @amount >= 50 || @status == "open"
+  #if @amount >= 50 || @status == "open"
      if sender.valid? && receiver.valid?
       true
     else
