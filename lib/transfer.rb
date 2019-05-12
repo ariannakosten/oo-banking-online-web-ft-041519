@@ -28,7 +28,7 @@ def execute_transaction
 #sender.balance -= amount || receiver.balance += amount
  if valid? && status == "pending"
       if amount < self.sender.balance
-        self.sender.balance -= amount
+        @sender.balance -= amount
         self.receiver.balance += amount
         self.status = "complete"
       else
@@ -40,6 +40,6 @@ end
 end
 
 def reverse_transfer
-
+ 
 end
 end
